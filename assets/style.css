@@ -1,4 +1,52 @@
 
+body{
+  background: rgb(255,255,255);
+  background-size: 100%;
+  font-family: 'Montserrat', serif;
+  
+  color: black;
+  font-weight: 400;
+}
+
+.container{
+  margin: 50px;
+  
+}
+
+/*Textos Generales*/
+
+.main-title{
+  font-family: 'Montserrat';
+  font-size: 30px;
+  font-weight: 700;
+  padding: 40px;
+  
+}
+
+
+
+h1{
+  color:black;
+  font-size:35px;
+  font-weight:700;
+  margin-bottom: 40px;
+  
+}
+
+h2{
+  color:black;
+  font-size:30px;
+  font-weight:600;
+  
+}
+
+p{
+  text-align: justify;
+  line-height: 1.7;
+}
+
+
+
 /*header*/
 
 header {
@@ -6,6 +54,7 @@ header {
   overflow:hidden; /* Eliminamos errores de float */
   background:white;
   margin-bottom:10px;
+  
 }
 
 .wrapper {
@@ -16,7 +65,8 @@ header {
 }
 
 header .logo {
-  color:black;
+  color:#a3d7d7;
+  font-family:'Montserrat Alternates', sans-serif;
   font-size:40px;
   font-weight: 600;
   line-height:100px;
@@ -48,49 +98,7 @@ header nav a:hover {
 
 
 
-
-
-/*container*/
-body{
-  background: rgb(255,255,255);
-  background-size: 100%;
-  font-family: 'Montserrat', serif;
-  margin: 50px;
-  color: black;
-  font-weight: 400;
-}
-
-
-
-.main-title{
-  font-family: 'Montserrat';
-  font-size: 30px;
-  font-weight: 700;
-  padding: 40px;
-  
-}
-
-
-
-
-
-
-h1{
-  color:black;
-  font-size:40px;
-  font-weight: 800;
-  text-align: center;
-  
-}
-
-h2{
-  color:black;
-  font-size:30px;
-  font-weight: 600;
-  ;
-}
-
-/*contentttt*/
+/*contenedor grid general*/
 
 .gran-contenedor{
   
@@ -172,7 +180,145 @@ h2{
   text-align: justify;
 }
 
-footer{
-  background-color: black;
+/*footer*/
+
+
+
+.container-text-footer{
+  width:90%; /* Establecemos que el ancho sera del 90% */
+  max-width:1024px; /* Aqui le decimos que el ancho máximo sera de 1000px */
+  margin:auto; /* Centramos los elementos */
+  overflow:hidden;
+}
+
+
+
+footer h1{
+  font-size: 24px;
+  font-weight: 600;
+  
+}
+
+footer span{
+  color: #9b9b9b;
+}
+
+
+/*sitio 2*/
+
+.escritura{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  
+}
+
+
+/*SITIO 4 flexbox*/
+
+.container-cards{
+  
+  width:90%; 
+  max-width:1024px; 
+  margin:auto;
+  
+  
+}
+.cards--flex {
+  margin-top: 80px;
+  max-width:1024px;
   width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+.card {
+  
+  flex: 23%;
+  max-width: 25%;
+}
+
+
+/*SITIO 4 grid*/
+
+.docs {
+  
+  position: relative;
+  grid-column-start:2;
+  grid-column-end:5;
+  align-content: center;
+  
+}
+
+
+
+/*SITIO 5*/
+
+.container-clases {
+  width: 100%;
+  max-width: 1150px;
+  max-height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  margin-top:50px;
+  margin-bottom: 200px;
+}
+
+.container-clases .clases-card{
+  background:#F0F1FF;
+  max-width: 200px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+  padding:20px;
+}
+
+.container-clases .clases-card:hover{
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container-clases .clases-card img{
+  
+  width: 100%;
+  height: 220px;
+  
+}
+
+
+.container-clases .clases-card h4{
+  
+  font-weight: 700;
+  Font-size:25px;
+  
+}
+
+.container-clases .clases-card p{
+  padding: 0 1rem;
+  font-size: 19px;
+  font-weight: 500;
+  text-align: center;
+  
+}
+
+.container-clases .clases-card a {
+  font-weight: 600;
+  
+  color: blue;
+  padding:10px;
+  margin-bottom:20px;
+}
+
+footer{
+  max-width: 1460px;
+  
+  background-color: #F0F1FF;
+  padding: 24px;
+  color: white;
+  margin-top: 100px;
+  
 }
