@@ -34,6 +34,13 @@ h2{
   font-weight:600;  
 }
 
+h3{
+  color:#88d3d3;
+  font-size:22px;
+  font-weight:700;
+
+}
+
 p{
   text-align: justify;
   line-height: 1.7;
