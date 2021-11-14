@@ -2,15 +2,13 @@
 body{
   background: rgb(255,255,255);
   background-size: 100%;
-  font-family: 'Montserrat', serif;
-  
+  font-family: 'Montserrat', sans-serif;
   color: black;
   font-weight: 400;
 }
 
 .container{
   margin: 50px;
-  
 }
 
 /*Textos Generales*/
@@ -19,11 +17,8 @@ body{
   font-family: 'Montserrat';
   font-size: 30px;
   font-weight: 700;
-  padding: 40px;
-  
+  padding: 40px; 
 }
-
-
 
 h1{
   color:black;
@@ -36,8 +31,7 @@ h1{
 h2{
   color:black;
   font-size:30px;
-  font-weight:600;
-  
+  font-weight:600;  
 }
 
 p{
@@ -50,18 +44,17 @@ p{
 /*header*/
 
 header {
-  width:100%; /* Establecemos que el header abarque el 100% del documento */
-  overflow:hidden; /* Eliminamos errores de float */
+  width:100%; 
+  overflow:hidden; 
   background:white;
-  margin-bottom:10px;
-  
+  margin-bottom:10px; 
 }
 
 .wrapper {
-  width:90%; /* Establecemos que el ancho sera del 90% */
-  max-width:1024px; /* Aqui le decimos que el ancho máximo sera de 1000px */
-  margin:auto; /* Centramos los elementos */
-  overflow:hidden; /* Eliminamos errores de float */
+  width:90%; 
+  max-width:1024px; 
+  margin:auto; 
+  overflow:hidden; 
 }
 
 header .logo {
@@ -110,16 +103,12 @@ header nav a:hover {
   align-content: center;
 }
 
-
-
 .contenedor-1 {
   position: relative;
   grid-column-start:2;
   grid-column-end:3;
   height: 290px;
-  width: 290px;
-  
-  
+  width: 290px;    
 }
 
 .contenedor-1 img {
@@ -137,9 +126,7 @@ header nav a:hover {
   grid-column-start:3;
   grid-column-end:4;
   height: 290px;
-  width: 290px;
-  
-  
+  width: 290px; 
 }
 
 .contenedor-2 img {
@@ -158,9 +145,7 @@ header nav a:hover {
   grid-column-start:4;
   grid-column-end:5;
   height: 290px;
-  width: 290px;
-  
-  
+  width: 290px; 
 }
 
 .contenedor-3 img {
@@ -180,23 +165,20 @@ header nav a:hover {
   text-align: justify;
 }
 
+
+
 /*footer*/
 
-
-
 .container-text-footer{
-  width:90%; /* Establecemos que el ancho sera del 90% */
-  max-width:1024px; /* Aqui le decimos que el ancho máximo sera de 1000px */
-  margin:auto; /* Centramos los elementos */
+  width:90%; 
+  max-width:1024px; 
+  margin:auto; 
   overflow:hidden;
 }
 
-
-
 footer h1{
   font-size: 24px;
-  font-weight: 600;
-  
+  font-weight: 600; 
 }
 
 footer span{
@@ -204,25 +186,24 @@ footer span{
 }
 
 
+
+
 /*sitio 2*/
 
 .escritura{
   grid-column-start: 2;
-  grid-column-end: 4;
-  
+  grid-column-end: 4; 
 }
 
 
 /*SITIO 4 flexbox*/
 
-.container-cards{
-  
+.container-cards{ 
   width:90%; 
   max-width:1024px; 
-  margin:auto;
-  
-  
+  margin:auto; 
 }
+
 .cards--flex {
   margin-top: 80px;
   max-width:1024px;
@@ -231,22 +212,22 @@ footer span{
   flex-wrap: wrap;
   gap: 100px;
 }
-.card {
-  
+
+.card { 
   flex: 23%;
   max-width: 25%;
 }
 
 
+
+
 /*SITIO 4 grid*/
 
 .docs {
-  
   position: relative;
   grid-column-start:2;
   grid-column-end:5;
   align-content: center;
-  
 }
 
 
@@ -286,15 +267,12 @@ footer span{
   
   width: 100%;
   height: 220px;
-  
 }
 
 
 .container-clases .clases-card h4{
-  
   font-weight: 700;
   Font-size:25px;
-  
 }
 
 .container-clases .clases-card p{
@@ -302,12 +280,10 @@ footer span{
   font-size: 19px;
   font-weight: 500;
   text-align: center;
-  
 }
 
 .container-clases .clases-card a {
-  font-weight: 600;
-  
+  font-weight: 600; 
   color: blue;
   padding:10px;
   margin-bottom:20px;
@@ -315,7 +291,6 @@ footer span{
 
 footer{
   max-width: 1460px;
-  
   background-color: #F0F1FF;
   padding: 24px;
   color: white;
