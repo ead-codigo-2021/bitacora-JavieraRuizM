@@ -195,7 +195,7 @@ footer span{
 
 
 
-/*sitio 2*/
+/*sobre mi*/
 
 .escritura{
   grid-column-start: 2;
@@ -203,7 +203,7 @@ footer span{
 }
 
 
-/*SITIO 4 flexbox*/
+/*blog flexbox*/
 
 .container-cards{ 
   width:90%; 
@@ -228,7 +228,7 @@ footer span{
 
 
 
-/*SITIO 4 grid*/
+/*blog text*/
 
 .docs {
   position: relative;
@@ -239,7 +239,7 @@ footer span{
 
 
 
-/*SITIO 5*/
+/*tarjetas clases*/
 
 .container-clases {
   width: 100%;
@@ -303,4 +303,146 @@ footer{
   color: white;
   margin-top: 100px;
   
+}
+
+/*responsive celular*/
+
+@media screen and (max-width: 800px){
+
+ 
+  header {
+    width:100%; 
+    overflow:hidden; 
+    background:white;
+    margin-bottom:10px;
+    
+  }
+  
+  .wrapper {
+    width:90%; 
+    max-width:auto; 
+    margin:auto; 
+    overflow:hidden; 
+  }
+  
+  header .logo {
+    color:#a3d7d7;
+    font-family:'Montserrat Alternates', sans-serif;
+    font-size:25px;
+    font-weight: 600;
+    line-height:100px;
+    
+  }
+  
+  header nav {
+    float: left;
+    line-height:100px;
+  }
+
+  header nav a {
+    display:inline-block;
+    color:black;
+    text-decoration:none;
+    padding:10px 20px;
+    line-height:normal;
+    font-size:18px;
+    font-weight:regular;
+    -webkit-transition:all 500ms ease;
+    -o-transition:all 500ms ease;
+    transition:all 500ms ease;
+  }
+
+  .gran-contenedor{
+  
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 4fr;
+    gap: 60px;
+    align-content: center;
+  }
+  
+  
+  
+  .contenedor-1 {
+    position: relative;
+    grid-column-start:1;
+    grid-column-end:1;
+    height: 290px;
+    width: 290px;
+    
+    
+  }
+  
+  
+  .contenedor-2 {
+    position: relative;
+    grid-column-start:1;
+    grid-column-end:1;
+    height: 290px;
+    width: 290px;
+    
+    
+  }
+  
+
+  .contenedor-3 {
+    position: relative;
+    grid-column-start:1;
+    grid-column-end:1;
+    height: 290px;
+    width: 290px;
+    
+    
+  }
+  
+
+  
+  .parrafo{
+    
+    grid-column-start: 1;
+    grid-column-end: 1;
+    text-align: justify;
+  }
+
+
+.escritura{
+  grid-column-start: 1;
+  grid-column-end: 1;
+  
+}
+
+.docs {
+  
+  position: relative;
+  grid-column-start:1;
+  grid-column-end:1;
+  align-content: center;
+  
+}
+
+.container-cards{
+  
+  width:90%; 
+  max-width:auto; 
+  margin:auto;
+ 
+  
+  
+}
+.cards--flex {
+  margin-top: 80px;
+  max-width:auto;
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+.card {   
+  max-width: 200px;
+  
+}
+
 }
